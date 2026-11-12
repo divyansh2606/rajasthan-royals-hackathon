@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pressure XI | Rajasthan Royals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="hero-brand">
+          <span class="rr-logo-wrap"><span class="rr-logo-fallback" aria-hidden="true">RR</span><img class="rr-logo" src="https://www.rajasthanroyals.com/static-assets/images/cssimages/static/rr-new.png?v=7.95" alt="Rajasthan Royals logo" onload="this.previousElementSibling.hidden=true" onerror="this.style.display='none'" /></span>
+          <div><p class="eyebrow">Rajasthan Royals · SupeRR Selector Season 2</p><span class="hero-tag">IPL 2027 scouting brief</span></div>
+        </div>
+        <h1>Pressure XI</h1>
+        <p class="hero-copy">A data-led ranking of players who deliver when the margin for error disappears.</p>
+        <div class="method-strip">
+          <span>IPL + T20I</span><span>2022-2026</span><span>188,330 deliveries</span><span>Two pressure scenarios</span>
+        </div>
+      </section>
+
+      <section class="score-explainer">
+        <div><span class="number">60%</span><p>Primary pressure scenario</p></div>
+        <div><span class="number">40%</span><p>Strict pressure scenario</p></div>
+        <div><span class="number">30+</span><p>Minimum pressure balls for batters</p></div>
+        <div><span class="number">24+</span><p>Minimum pressure balls for bowlers</p></div>
+      </section>
+
+      <section class="spotlight" aria-labelledby="spotlight-title">
+        <div class="spotlight-heading"><p class="eyebrow">At a glance</p><h2 id="spotlight-title">Pressure leaders</h2></div>
+        <div id="spotlight-cards" class="spotlight-cards"></div>
+      </section>
+
+      <section class="rankings" aria-labelledby="rankings-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Final shortlist</p>
+            <h2 id="rankings-title">Reliable when it matters</h2>
+          </div>
+          <div class="tabs" role="tablist" aria-label="Player role">
+            <button class="tab active" data-role="batters" role="tab" aria-selected="true">Batters</button>
+            <button class="tab" data-role="bowlers" role="tab" aria-selected="false">Bowlers</button>
+          </div>
+        </div>
+        <div id="cards" class="cards"></div>
+        <p class="eligibility-note">Click any player to see why they were selected.</p>
+      </section>
+
+      <section class="methodology">
+        <p class="eyebrow">How pressure is defined</p>
+        <h2>Pressure is a match state, not a reputation.</h2>
+        <div class="method-grid">
+          <article><span>01</span><h3>Late innings</h3><p>Every ball from the 16th over onwards enters the primary pressure scenario.</p></article>
+          <article><span>02</span><h3>Chase stress</h3><p>Chases qualify earlier when the required rate reaches 9 or higher with ten overs or fewer remaining.</p></article>
+          <article><span>03</span><h3>Wickets in hand</h3><p>Chase balls with five or more wickets down receive pressure status during the last ten overs.</p></article>
+          <article><span>04</span><h3>Knockout games</h3><p>Final-eight-over deliveries in knockout matches are included to capture tournament stakes.</p></article>
+        </div>
+      </section>
+    </main>
+    <dialog id="detail-dialog">
+      <button class="close" aria-label="Close player detail">×</button>
+      <div id="detail-content"></div>
+    </dialog>
+    <script src="app.js"></script>
+  </body>
+</html>
